@@ -1,3 +1,4 @@
 生日攻击是一种密码学攻击手段，所利用的是概率论中生日问题的数学原理。这种攻击手段可用于滥用两个或多个集团之间的通信。此攻击依赖于在随机攻击中的高碰撞概率和固定置换次数（鸽巢原理）。使用生日攻击，攻击者可在中找到散列函数碰撞，为原像抗性安全性。
 ![](https://github.com/Silver-Glacier/cryptology/blob/main/sm3%E7%94%9F%E6%97%A5%E6%94%BB%E5%87%BB/png1.png)
-
+碰撞成功结果
+![](https://github.com/Silver-Glacier/cryptology/blob/main/sm3%E7%94%9F%E6%97%A5%E6%94%BB%E5%87%BB/png2.png)
