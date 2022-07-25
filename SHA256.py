@@ -30,7 +30,7 @@ class SHA256:
         return ((x >> b) | (x << (32 - b))) & ((2**32)-1)
 
     #信息预处理。附加填充和附加长度值
-    def Pad(self, W):
+    def Pad(self, W): 
         return bytes(W, "ascii") + b"\x80" + (b"\x00" * ((55 if (len(W) % 64) < 56 else 119) - (len(W) % 64))) + (
             (len(W) << 3).to_bytes(8, "big"))
 
