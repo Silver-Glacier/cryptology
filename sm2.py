@@ -30,3 +30,4 @@ if __name__ == "__main__":
     if action == "decrypt":
         decrypted_contact_info = decrypt(contact_info)
         print(decrypted_contact_info)
+ 
