@@ -14,4 +14,4 @@ PGP支持消息认证和完整性检测：
 
 结果如下
 
-!()[https://github.com/Silver-Glacier/cryptology/blob/main/sm2-PGP/png1.png]
+![成果截图](https://github.com/Silver-Glacier/cryptology/blob/main/sm2-PGP/png1.png)
