@@ -75,7 +75,7 @@ def encrypt(m,k):
     #str->bytes
     m = str.encode(m)
     k = str.encode(k)
-    print("Message：\n", base64.b16encode(m))
+    print("Message：\n", m)
     print("Key：\n", base64.b16encode(k))
     
     SM4 = CryptSM4()
@@ -83,7 +83,7 @@ def encrypt(m,k):
     c1 = SM4.crypt_ecb(m)
     
     c2 = sm2_crypt.encrypt(k)
-    print("message：\n", base64.b16encode(c1))
+    print("message：\n", c1)
     print("Encryptkey：\n",base64.b16encode(c2))
     return c1, c2
 
@@ -92,9 +92,10 @@ def decrypt(c1,c2):
     SM4 = CryptSM4()
     SM4.set_key(k, SM4_DECRYPT)
     m = SM4.crypt_ecb(c1)
-    
+
+    print("message：\n", m)    
     print("Decrypt_key：\n", base64.b16encode(k))
-    print("message：\n", base64.b16encode(m))
+
 
 if __name__ == '__main__':
     p = 0xFFFFFFFEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000FFFFFFFFFFFFFFFF
