@@ -12,6 +12,37 @@ PGP支持消息认证和完整性检测：
 
 发送者只需使用PGP为消息创建一个数字签名，即以数据或信息创建一个散列，然后使用发送者的私钥利用散列生成数字签名。
 
+### 函数说明
+
+>module
+
+椭圆曲线上的模运算
+
+>modmulty
+
+椭圆曲线上的模幂运算
+
+>add
+
+椭圆曲线上的加法运算
+
+>multipy
+
+椭圆曲线上的点乘运算
+
+> key
+
+生成SM2算法的公私钥对
+
+>encrypt
+
+加密函数
+
+>decrypt
+
+解密函数
+
+
 结果如下
 
 ![成果截图](https://github.com/Silver-Glacier/cryptology/blob/main/sm2-PGP/png1.png)
