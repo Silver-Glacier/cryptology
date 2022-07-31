@@ -4,13 +4,13 @@ import random
 from gmssl import sm2
 from gmssl.sm4 import CryptSM4, SM4_ENCRYPT, SM4_DECRYPT
 
-def epoint_mod(a, n):  
+def module(a, n):  
     if math.isinf(a):
         return float('inf')
     else:
         return a % n
 
-def epoint_modmult(a, b, n):
+def modmultity(a, b, n):
     if b == 0:
         r = float('inf')
     elif a == 0:
