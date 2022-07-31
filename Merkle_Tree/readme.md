@@ -3,10 +3,15 @@
 
 ## 代码说明
 >createTree(nodes)
+
 创建树
+
 >def(root)
+
 dfs用In-Order Traverse遍历整棵树
+
 >bfs(root)
+
 通过使用队列对整个树进行
 
 ![成果截图](https://github.com/Silver-Glacier/cryptology/blob/main/Merkle_Tree/png1.png)
