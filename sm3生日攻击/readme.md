@@ -6,3 +6,32 @@
 碰撞成功结果
 
 ![成果截图](https://github.com/Silver-Glacier/cryptology/blob/main/sm3%E7%94%9F%E6%97%A5%E6%94%BB%E5%87%BB/png2.png)
+
+
+核心代码部分
+
+```python
+if __name__ ==  '__main__':
+    iv='7380166f4914b2b9172442d7da8a0600a96f30bc163138aae38dee4db0fb0e4e'
+    plain = input("请输入明文：")
+    B=strtobin(plain)
+    for b in B:
+        if b!='':
+            iv=cf(iv,b)
+            result=iv
+    print(result)
+
+for i in range(20):
+    for _ in diclist:
+        iv='7380166f4914b2b9172442d7da8a0600a96f30bc163138aae38dee4db0fb0e4e'
+        test=testlist+_
+        plain=test
+        B=strtobin(plain)
+        for b in B:
+            if b!='':
+                iv=cf(iv,b)
+                if iv==result:
+                    print("明文：",plain,"结果：",iv)
+                    quit()
+    testlist+=diclist[i]
+```
